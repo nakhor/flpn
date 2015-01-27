@@ -1,1 +1,30 @@
+body {font-family:Verdana,sans-serif; }
 img { max-width: 100%; }
+ul {font-family: Verdana; }
+
+.logo { height:40px;float:left;}
+.info-icon {height:40px;float:right;}
+.km-header,.km-footer {
+    background-color:#9C9C9C;
+    font-weight:bold;
+    color:#594099;
+    text-align:center;
+    vertical-align:middle;
+    font-size:20px;
+    line-height:40px;
+}
+#directory {
+    margin:0px;
+    padding:0px;
+}
+.cat-header{
+    line-height:40px;
+    background-color:#D4D4D4;
+    display:block;
+    text-decoration:none;
+}
+#search {
+    line-height:40px;
+    height:40px;
+    padding-left:40px;
+}
