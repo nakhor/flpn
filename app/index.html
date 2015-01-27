@@ -13,8 +13,34 @@
 	<script src="scripts/app.js"></script>
 </head>
 <body>
-	<div data-role="view">
-
+    <div data-id="default" data-role="layout">
+        <div data-role="header">
+            <img src="images/logo_120x120.png" class="logo"/>
+            Southern Pathways NSW
+            <img src="images/info-icon.png" class="info-icon"/>
+        </div>
+        <div data-role="footer">
+            <a style="float:right;padding-right:5px;">View</a>
+            <span style="float:left;padding-left:5px;">100 Results</span>
+        </div>
+    </div>
+	<div data-role="view" data-layout="default">
+        <img src="images/glyphicons_027_search.png" style="float:left;"/>
+        <input type="search" value="search" id="search" onfocus="enterSearch()"/>
+        <ul id="directory" data-role="listview" data-type="group">
+            <li click="collapse(this)">
+                <span class="cat-header">Service Types</span>
+                <ul id="directory-type">
+                    
+                </ul>
+            </li>
+            <li>
+                <span class="cat-header">Local Government Areas</span>
+                <ul id="directory-lga">
+                    
+                </ul>
+            </li>
+        </ul>
 	</div>
 </body>
 </html>
